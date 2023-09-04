@@ -4,6 +4,7 @@ import scene1 from '../Assests/TRAVE.png'
 import scene2 from '../Assests/beauty.png'
 import scene3 from '../Assests/scene2.png'
 import Carousel from 'react-bootstrap/Carousel';
+import Button from '@mui/material/Button';
 
 
 function MyCarousel() {
@@ -16,18 +17,18 @@ function MyCarousel() {
     
     return (
         <>
-        <div className='mt-20 h-full justify-center'>
+        <div className='mt-20 flex flex-wrap justify-center h-full items-center w-full'>
        
        <div className="carousel">
        <Carousel activeIndex={index} onSelect={handleSelect}>
        <Carousel.Item>
-         <img src={scene1} className='w-full' alt='Travel Image 1' />
+         <img src={scene2} className='w-full' alt='Travel ' />
        </Carousel.Item>
        <Carousel.Item>
-         <img src={scene2} className='w-full' alt='Travel Image 2' />
+         <img src={scene1} className='w-full' alt='Travel' />
        </Carousel.Item>
        <Carousel.Item>
-         <img src={scene3} className='w-full' alt='Travel Image 3' />
+         <img src={scene3} className='w-full' alt='Travel' />
        </Carousel.Item>
      </Carousel>
      </div>
@@ -35,7 +36,7 @@ function MyCarousel() {
        
       <div className='about h-44 relative w-full text-center mx-4 p-12'>
       <h3 className='text-4xl font-bold text-center mb-4'>About Us</h3>
-    <p className='text-gray-600 text-left'>
+    <p className='text-gray-600 font-normal text-left'>
     Welcome to our travel story platform, where adventures and experiences become a source of inspiration and lasting memories. Our mission is to provide a space for travelers like you to share your travel stories, create digital travel diaries, and connect with a community of fellow adventurers. Here's what you can expect from our platform:
     <br/>
    <br/> <strong>Share Your Travel Stories:</strong> Our platform allows you to share your travel stories with the world. Whether it's a thrilling backpacking adventure, a cultural exploration, or a simple weekend getaway, your stories matter to us.
@@ -56,12 +57,31 @@ function MyCarousel() {
   </p>
 </div>
 <div className='grid grid-col-1 justify-center grid-row-2 gap-y-3 mt-96 '>
-<button className='bg-blue-600 text-white w-96 h-16 font-bold text-lg hover:bg-blue-900 hover:text-white'>
-  Create Your First Diary
-</button>
-<button className='bg-green-600 text-white w-96 h-16 font-bold text-lg hover:bg-green-900 hover:text-white'>
-  Add Your Travel Story
-</button>
+<Button variant="contained" className='w-96 h-16' style={{
+    backgroundColor:'rgb(37,99,235)',
+    color:'white',
+    fontSize:'20px',
+    fontWeight:'20px',
+    fontStyle:'semibold',
+    '&:hover': {
+        backgroundColor: 'rgb(30,58,138)', 
+        
+      },
+}}>Create Your First Diary</Button>
+
+<Button variant="contained" className='w-96 h-16 text-lg' style={{
+    backgroundColor:'rgb(22,163,74)',
+    color:'white',
+    fontSize:'20px',
+    fontWeight:'20px',
+    fontStyle:'semibold',
+    '&:hover': {
+        backgroundColor: 'rgb(30,58,138)', 
+        // Change to your desired hover background color
+      },
+}}>  Add Your Travel Story</Button>
+
+
 </div>
 
 

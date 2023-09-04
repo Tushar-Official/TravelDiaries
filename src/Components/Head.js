@@ -7,7 +7,7 @@ function Head() {
     <>
     <div className="flex w-full pt-2 px-8 h-20 bg-slate-100 fixed top-0 z-50 ">
     <div className='logo flex justify-center'>
-    <div><img src={logo} className='w-20 h-16' alt="/"/></div>
+    <div><img src={logo} className='w-20 h-16 ml-2' alt="/"/></div>
     </div>
     <div className='flex justify-between w-full pt-3'>
     <div className='pages flex justify-evenly'>
