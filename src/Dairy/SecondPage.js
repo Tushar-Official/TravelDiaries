@@ -97,7 +97,7 @@ function SecondPage() {
    
     {count===3?(
       <div className='review'>
-      <h3>{usertitle}</h3>
+      <h3 className='text-lg font-semibold'>{usertitle}</h3>
       {selectedFile && (
         <div>
           <p>Selected File: {selectedFile.name}</p>
