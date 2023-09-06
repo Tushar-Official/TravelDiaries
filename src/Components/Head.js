@@ -34,15 +34,12 @@ function Head(props) {
     <ul className='flex justify-evenly mx-4 cursor-pointer'>
     <Link to="/"><li className='mx-6 font-bold text-lg text-orange-500'>About Us</li></Link>
     <Link to="/"><li className='mx-6 font-bold text-lg text-orange-500'>Home</li></Link>
-    {props.firstpage === true && !props.secondpage ? (
-      <Link to="firstpageDiary">
-        <li className='mx-6 font-bold text-lg text-orange-500'>Create Your Dairy</li>
-      </Link>
-    ) : props.firstpage === false && !props.secondpage ? (
+    {(props.firstpage===true || props.secondPage===true)? null:
+    (
       <Link to="firstpageDiary">
         <li className='mx-6 font-bold text-lg text-orange-500'>Create Your First Dairy</li>
       </Link>
-    ) : null}
+      )}
     <li className='mx-6 font-bold text-lg text-orange-500'>Add Your Travel Story</li>
     </ul>
   

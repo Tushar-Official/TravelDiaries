@@ -1,0 +1,7 @@
+.line {
+    width: 300px; /* Adjust the width of the line as needed */
+    background-color: black; /* Adjust the color of the line as needed */
+    height: 2px; /* Adjust the height of the line as needed */
+    margin-left: 20px; /* Adjust the margin to position it between circles */
+    align-self:baseline; /* Vertically align the line with the circles */
+  }
