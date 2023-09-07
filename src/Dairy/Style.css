@@ -5,3 +5,13 @@
     margin-left: 20px; /* Adjust the margin to position it between circles */
     align-self:baseline; /* Vertically align the line with the circles */
   }
+  h3{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+  p{
+    text-align: left;
+
+  }

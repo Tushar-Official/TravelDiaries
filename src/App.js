@@ -6,6 +6,8 @@ import SignUp from './Components/SignUp';
 import Sign from './Components/Sign';
 import FirstPage from './Dairy/FirstPage';
 import SecondPage from './Dairy/SecondPage';
+import TermsOfService from './Components/Terms';
+import PrivacyPolicy from './Components/Privacy';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
     <Route path="/signin" element={<Sign/>}/>
     <Route path="/firstpageDiary" element={<FirstPage/>}/>
     <Route path="/secondPageDiary" element={<SecondPage/>}/>
+    <Route path="/termsofservice" element={<TermsOfService/>}/>
+    <Route path="/privacypolicy" element={<PrivacyPolicy/>}/>
     </Routes>
     </Router>
     </div>

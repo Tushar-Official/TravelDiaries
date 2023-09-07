@@ -33,7 +33,7 @@ function SecondPage() {
    <div className='timeline mt-40 flex justify-evenly items-center'>
   <div className='firstcircle relative grid rid-col-1 grid-row-2 justify-center'>
     <div className='flex justify-center'><BsCircle
-    className={`bg-orange-600 rounded-full w-8 h-8 ${count === 1 ? 'bg-green-600' : ''}`}
+    className={`bg-orange-600 rounded-full cursor-pointer w-8 h-8 ${count === 1 ? 'bg-green-600' : ''}`}
     onClick={() => setCount(1)}
   /></div>
     <p className='text-center font-semibold text-xs'>{title[0]}</p>
@@ -41,7 +41,7 @@ function SecondPage() {
   
   <div className='secondcircle relative'>
   <div className='flex justify-center'><BsCircle 
-  className={`bg-orange-600 rounded-full w-8 h-8 ${count === 2 ? 'bg-green-600' : ''}`}
+  className={`bg-orange-600 rounded-full cursor-pointer w-8 h-8 ${count === 2 ? 'bg-green-600' : ''}`}
   onClick={()=>setCount(2)} 
    /></div>
     <p className='text-center font-semibold text-xs'>{title[1]}</p>
@@ -49,7 +49,7 @@ function SecondPage() {
   
   <div className='thirdcircle relative'>
   <div className='flex justify-center'><BsCircle 
-  className={`bg-orange-600 rounded-full w-8 h-8 ${count === 3 ? 'bg-green-600' : ''}`}
+  className={`bg-orange-600 rounded-full cursor-pointer w-8 h-8 ${count === 3 ? 'bg-green-600' : ''}`}
   onClick={()=>setCount(3)} 
    /></div>
     <p className='text-center font-semibold text-xs'>{title[2]}</p>

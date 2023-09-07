@@ -5,15 +5,24 @@ import scene2 from '../Assests/beauty.png'
 import scene3 from '../Assests/scene2.png'
 import Carousel from 'react-bootstrap/Carousel';
 import Button from '@mui/material/Button';
-import {Link} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 
 
 function MyCarousel() {
     const [index, setIndex] = useState(0);
-
+    const navigate=useNavigate()
     const handleSelect = (selectedIndex) => {
       setIndex(selectedIndex);
     };
+
+    const handleCheck=()=>{
+      if(sessionStorage.getItem("logined")===true){
+        navigate("/firstpageDiary")
+      }
+      else{
+        navigate("/signup")
+      }
+    }
     
     
     return (
@@ -58,7 +67,8 @@ function MyCarousel() {
   </p>
 </div>
 <div className='grid grid-col-1 justify-center grid-row-2 gap-y-3 mt-96 '>
-<Link to="firstpageDiary">
+
+
 <Button variant="contained" className='w-96 h-16' style={{
     backgroundColor:'rgb(37,99,235)',
     color:'white',
@@ -69,7 +79,7 @@ function MyCarousel() {
         backgroundColor: 'rgb(30,58,138)', 
         
       },
-}}>Create Your First Diary</Button></Link>
+}} onClick={()=>handleCheck()}>Create Your First Diary</Button>
 
 <Button variant="contained" className='w-96 h-16 text-lg' style={{
     backgroundColor:'rgb(22,163,74)',
